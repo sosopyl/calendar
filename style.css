@@ -28,7 +28,9 @@ thead tr, thead th{
 #calendar a:hover {
 	color: red;
 }
-
+td:hover{
+    background-color: rgb(240, 178, 178);
+}
 #calendar .active {
 	color: red;
 }
