@@ -115,7 +115,7 @@ function getNextYear(year, month){
 
 console.log(month)
 next.addEventListener('click', function() {
-        if(month < 12){
+        if(month < 11){
             month++
         } else
         (month = 0)
@@ -124,7 +124,7 @@ next.addEventListener('click', function() {
          }
 
 	draw(body, year, month); 
-    info.textContent = month +'.' + year
+    datename()
 });
 prev.addEventListener('click', function() {
     if(month > 0){
@@ -136,8 +136,14 @@ prev.addEventListener('click', function() {
      }
 
 draw(body, year, month); 
-info.textContent = month +'.' + year
+datename()
 });
 
-
-info.textContent = month +'.' + year
+function datename(){
+    let monthname = month + 1;
+    if(monthname <= 9){
+        monthname = '0' + monthname
+    }
+    info.textContent = monthname +'.' + year
+}
+datename()

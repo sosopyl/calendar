@@ -5,22 +5,23 @@
 	display: inline-block;
 }
 td, th {
-	padding: 10px;
+	padding: 15px;
 	border: 0px solid black;
 	text-align: center;
-    background-color: rgb(248, 216, 227);
-    border-radius: 50%;
+    background-color: rgb(255, 199, 199);
+    /* border-radius: 50%; */
 }
 thead tr, thead th{
     border-radius: 0px;
-    background-color: rgb(255, 255, 255);
-    font-size: 20px;
+    background-color: rgb(59, 8, 88);
+    font-size: 35px;
+    color: white;
 }
 #calendar .nav, #calendar .info {
 	text-align: center;
 }
 #calendar a {
-	color: blue;
+	color: rgb(59, 8, 88);
 	font-size: 45px;
 	text-decoration: none;
 }
@@ -30,4 +31,8 @@ thead tr, thead th{
 
 #calendar .active {
 	color: red;
+}
+
+.info{
+    font-size: 30px;
 }
